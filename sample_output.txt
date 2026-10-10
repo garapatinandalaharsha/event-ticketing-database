@@ -1,0 +1,21 @@
+A: Spectator inserted successfully
+B: Event inserted successfully
+E: Ticket issued
+F: Travel Report
+('Stadium 1', datetime.date(2026, 7, 12), 1)
+G: Ticket Count per Event
+('100 metres sprint', 1)
+H: Tickets for Event
+('100 metres sprint', 1)
+I: Spectator Schedule
+('K Misri', datetime.date(2026, 7, 12), 'Stadium 1', datetime.time(16, 0), '100 metres sprint')
+J: Ticket Status
+('K Misri', 'A100', 'VALID')
+ERROR (D): Event has valid tickets
+CONTEXT: PL/pgSQL function block_event_delete() line 8 at RAISE
+
+K: Cancelled Tickets
+ERROR (C): Spectator has valid tickets
+CONTEXT: PL/pgSQL function block_spectator_delete() line 8 at RAISE
+
+L: All tables cleared
